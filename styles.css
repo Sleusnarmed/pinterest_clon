@@ -1,0 +1,132 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Hago que la barra de arriba este siempre presente y con un tamaño fijo */ 
+nav {
+    display: flex;
+    align-items: center;
+    position: fixed; 
+    background-color: white;
+    width: 100vw; 
+    height: 55px; 
+    padding: 5px; 
+}
+
+/* Logo de pinterest con un tamaño predeterminado. No cambia, padding agregado para dar espacio */ 
+.pinterest-logo {
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+}
+
+/* Se utilizará en la @media para cuando tenga la pantalla sea menor a cierto tamaño */ 
+.mobile-view {
+    display: none;
+}
+
+/* estilo los select y buttons para que se vean lo más parecido a como se ven en Pinterest */
+select, button {
+    border-radius: 16px;
+    height: 35px;
+    width: 65px;
+    background-color: white;
+    font-size: 15px;
+    padding: 2px; 
+    border: 0;
+    outline: 0;
+}
+
+/* es para todos los links */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* es para la barra de buscar */ 
+.buscador {
+    background-color: white;
+    border-radius: 16px;
+    padding: 0 4px;
+    flex: 3;
+    margin: 0 4px;
+}
+
+header form {
+    display: flex;
+    flex: 3;
+    
+}
+/* Aquí se encuentra #notifications #message #profile-img y #more  */ 
+.navbar {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+
+.inicio {
+    color: white; 
+    background-color: black;
+}
+
+/* @media para cuando sea de un tamaño menor a 60rem para*/
+@media (max-width: 60rem){
+    .mobile-view {
+        display: flex;
+    }
+
+    .desktop-view {
+        display: none;
+    }
+}
+
+.card-image { 
+    columns: 5 320px;
+    column-gap: 1em;
+}
+
+img {
+    max-width: 100%;
+    margin: 1em 1em;
+    border-radius: 10px;
+}
+
+/* Boton que te sigue para desplegar un menu de dudas */
+.fixed {
+    position: fixed;
+    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    bottom: 20px;
+    right: 2%;
+    border-radius: 100%;
+    border: 3px solid white;
+   
+}
+
+/* al hacer clic cambia el color */ 
+.fixed:hover {
+    background-color: lightgray;
+}
+
+/* Intento de boton para las imagenes */ 
+.button {
+    width: 120px;
+    height: 70px;
+    position: absolute;
+    display: none;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.imagen-dark-souls + .button {
+    display: inline-block;
+}

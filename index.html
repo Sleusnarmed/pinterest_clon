@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clon Pinterest</title>
+</head>
+<body>
+    <header>
+    <!-- Navbar como dice en el proyecto -->
+        <nav id="navbar-pinterest">
+            <!-- No borrar, es el logo de Pinterest. "a" puesta para cuando le des click vaya a pinterest -->
+            <a href="https://www.pinterest.com"><img src="/assets/pinterest-logo.png" alt="pinterest-logo" id="pinterest-logo" class="pinterest-logo"></a>
+            <!-- Esto es la vista para computadora arriba de los 60em -->
+            <div class="desktop-view" id="desktop-view"> 
+                <button class="inicio"><a href="https://www.pinterest.com.mx/" class="inicio">Inicio</button></a>
+                <button class="hoy"><a href="https://www.pinterest.com.mx/today/" class="hoy">Hoy</button></a>
+                <select name="set-up" id="set-up">
+                    <option value="crear" hidden>Crear</option>
+                    <option value="crear-un-idea-pin">Crear un idea pin</option>
+                    <option value="crear-pin">Crear pin</option>
+                </select>
+            </div>
+            <!-- Esta es la vista para celulares en su gran parte -->
+            <div class="mobile-view" id="mobile-view">
+                <select name="set-up" id="set-up">
+                    <option value="inicio">Inicio</option>
+                    <option value="hoy">Hoy</option>
+                    <option value="crear">Crear</option>
+                </select>
+            </div>
+            <!-- Label puesto para simular lo más parecido al buscador de Pinterest --> 
+            <form>
+                <input type="search" name="searcher" id="searcher" placeholder="Buscar" class="buscador">
+            </form>
+            <!-- divs hechos para contener los íconos de Pinterest, tal como dice en el proyecto -->
+            <div class="navbar">
+                <div id="notifications">🔔</div>
+                <div id="message ">📩</div>
+                <div id="profile-img">😶</div>
+            </div>
+        </nav>
+    </header>
+    <!-- En este main estará todo el contenido, las imágenes de la carpeta assets -->
+    <main id="content">
+        <div class="card-image">
+            <img src="/assets/imagen-dark-souls.jpg" alt="imagen-dark-souls" class="imagen-dark-souls">
+            <img src="/assets/imagen-doomslayer.jpg" alt="imagen-japonesa">
+            <img src="/assets/imagen-oceano.jpg" alt="imagen-oceano">
+            <img src="/assets/imagen-tormenta.jpg" alt="imagen-tormenta">
+            <img src="/assets/imagen-dark-souls.jpg" alt="imagen-dark-souls">
+            <img src="/assets/imagen-doomslayer.jpg" alt="imagen-japonesa">
+            <img src="/assets/imagen-oceano.jpg" alt="imagen-oceano">
+            <img src="/assets/imagen-tormenta.jpg" alt="imagen-tormenta">
+            <img src="/assets/imagen-dark-souls.jpg" alt="imagen-dark-souls">
+            <img src="/assets/imagen-doomslayer.jpg" alt="imagen-japonesa">
+            <img src="/assets/imagen-oceano.jpg" alt="imagen-oceano">
+            <img src="/assets/imagen-tormenta.jpg" alt="imagen-tormenta">
+            <img src="/assets/imagen-dark-souls.jpg" alt="imagen-dark-souls">
+            <img src="/assets/imagen-doomslayer.jpg" alt="imagen-japonesa">
+            <img src="/assets/imagen-oceano.jpg" alt="imagen-oceano">
+            <img src="/assets/imagen-tormenta.jpg" alt="imagen-tormenta">
+            <img src="/assets/imagen-dark-souls.jpg" alt="imagen-dark-souls">
+            <img src="/assets/imagen-doomslayer.jpg" alt="imagen-japonesa">
+            <img src="/assets/imagen-oceano.jpg" alt="imagen-oceano">
+            <img src="/assets/imagen-tormenta.jpg" alt="imagen-tormenta">
+            <img src="/assets/imagen-dark-souls.jpg" alt="imagen-dark-souls">
+            <img src="/assets/imagen-doomslayer.jpg" alt="imagen-japonesa">
+            <img src="/assets/imagen-oceano.jpg" alt="imagen-oceano">
+            <img src="/assets/imagen-tormenta.jpg" alt="imagen-tormenta">
+            <img src="/assets/imagen-dark-souls.jpg" alt="imagen-dark-souls">
+            <img src="/assets/imagen-doomslayer.jpg" alt="imagen-japonesa">
+            <img src="/assets/imagen-oceano.jpg" alt="imagen-oceano">
+            <img src="/assets/imagen-tormenta.jpg" alt="imagen-tormenta">
+            <img src="/assets/imagen-dark-souls.jpg" alt="imagen-dark-souls">
+            <img src="/assets/imagen-doomslayer.jpg" alt="imagen-japonesa">
+            <img src="/assets/imagen-oceano.jpg" alt="imagen-oceano">
+            <img src="/assets/imagen-tormenta.jpg" alt="imagen-tormenta">
+            <button class="button">GUARDAR</button>
+        </div>
+    </main>
+    <!-- footer para contener el butón de "dudas" flotante -->
+    <footer>
+        <button class="fixed">❔</button>
+    </footer>
+</body>
+</html>
